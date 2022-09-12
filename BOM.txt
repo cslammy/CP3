@@ -1,0 +1,91 @@
+###########################POTS BOARD###############################
+
+Part     Value        Device             Package              Description                                                                                             
+C1       .0033uF      C-US025-030X050    C025-030X050         CAPACITOR, American symbol                                                                                       
+C3       1uF          CPOL-USE2,5-6E     E2,5-6E              POLARIZED CAPACITOR, American symbol                                                                                          
+C4       .01uF        C-US025-030X050    C025-030X050         CAPACITOR, American symbol                                                                                                  
+C5       .01uF        C-US025-030X050    C025-030X050         CAPACITOR, American symbol                                                                                                 
+                                                                                              
+IN1                   WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                 
+IN2                   WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                 
+IN3                   WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                 
+IN4                   WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                 
+
+"TALL Trimmer" PCB pots used for input volume  4x A25K  
+available from thonk, for instance:https://www.thonk.co.uk/shop/ttpots/
+
+LEVEL1   A25K         9MM_SNAP-IN_POT_   9MM_SNAP-IN_POT      9mm vertical snap-in pot, Alpha / Panasonic style                                                                             
+LEVEL2   A25K         9MM_SNAP-IN_POT_   9MM_SNAP-IN_POT      9mm vertical snap-in pot, Alpha / Panasonic style                                                                             
+LEVEL3   A25K         9MM_SNAP-IN_POT_   9MM_SNAP-IN_POT      9mm vertical snap-in pot, Alpha / Panasonic style                                                                             
+LEVEL4   A25K         9MM_SNAP-IN_POT_   9MM_SNAP-IN_POT      9mm vertical snap-in pot, Alpha / Panasonic style                                                                             
+
+3.5mm PJ301 style mono PCB jacks--tayda part is PJ-3001F:
+https://www.taydaelectronics.com/hardware/3-5mm-plugs-jacks/pj-3001f-3-5-mm-mono-phone-jack.html                                                                                                            
+OUT1A                 WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                 
+OUT1B                 WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                                                                                                                             
+OUT2A                 WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                 
+OUT2B                 WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                 
+
+dual linear 9mm snap in pot used for overall volume:
+OUTLEVEL B10K         ALPHA-9MM-DUALPOT  DUAL_9MM_SNAP-IN_POT 9mm vertical snap-in pot, Alpha / Panasonic style, with a connection to the metal chassis for grounding 
+EG:                      
+https://www.taydaelectronics.com/potentiometer-variable-resistors/10k-ohm-linear-dual-taper-potentiometer-round-shaft-pcb-9mm.html
+
+
+
+R1       100R         R-US_0204/7        0204/7               RESISTOR, American symbol                                                                                                     
+R2       47K          R-US_0204/7        0204/7               RESISTOR, American symbol                                                                                                     
+R4       22K          R-US_0204/7        0204/7               RESISTOR, American symbol                                                                                                     
+R5       22K          R-US_0204/7        0204/7               RESISTOR, American symbol                                                                                                     
+R6       22K          R-US_0204/7        0204/7               RESISTOR, American symbol                                                                                                     
+R7       22K          R-US_0204/7        0204/7               RESISTOR, American symbol                                                                                                     
+R8       100R         R-US_0204/7        0204/7               RESISTOR, American symbol                                                                                                     
+
+U$1      CLICK FILTER SUBMINI_SPDT       SUBMINI_TOGGLE    
+100mil or 2.54 mm PC mount SPST or DPDT non threaded on-on switch--Eswitch 100SP1T1B4M2QE or equiv
+
+###########################MIX BOARD###############################
+                                  
+7906              7906T                    TO220H            Negative VOLTAGE REGULATOR                                               
+C2      10uF      CPOL-USE5-8.5            E5-8,5            POLARIZED CAPACITOR, American symbol                                   
+C3      10uF      CPOL-USE5-8.5            E5-8,5            POLARIZED CAPACITOR, American symbol                                   
+
+EUROPWR           EURO_POWER_HEADERREGULAR EURO_POWER_HEADER Power Header                                                              
+                                
+                                                      
+R1      6.8k      R-US_0204/7              0204/7            RESISTOR, American symbol  
+
+                                              
+Bournes-style 100R 10 turn trimmer or equiv.
+R4      100R      3386-X                   3386X             3386 Series                                                               
+
+R5      560R_1/2w R-US_0617/22             0617/22           RESISTOR, American symbol                                               
+R6      560R_1/2w R-US_0617/22             0617/22           RESISTOR, American symbol                                               
+R7      15K       R-US_0204/7              0204/7            RESISTOR, American symbol                                                 
+R8      200       R-US_0204/7              0204/7            RESISTOR, American symbol                                                 
+R9      15K       R-US_0204/7              0204/7            RESISTOR, American symbol                                                 
+
+Mix board transistors:
+
+The CP3 clone mix board requires 2x NPN and 2x PNP transistors
+You can use standard 3904 or 3906's or be a drooling Moog System 35 fetishist and use 3392 NPN and 4058 PNP's, the transistors Bob used in the 70's.
+
+To me, the 390x sounded the same or maybe a bit better.
+
+At the time I wrote the CP3 audiodiwhy CP3 blog post Mouser had 3392 and 4058's  https://www.mouser.com/ 
+You can also find them on Ebay but they are expensive.
+
+Anyway, here is the listing for 390x. Just shut up n' use those.  
+
+Q1      2N3904    2N3904                   TO92              NPN Transistor                                                            
+Q2      2N3906    2N3906                   TO92              PNP Transistor                                                            
+Q3      2N3904    2N3904                   TO92              NPN Transistor                                                            
+Q4      2N3906    2N3906                   TO92              PNP Transistor     
+
+Board interconnects
+100mil (2.54mm) m/f edge connectors:
+https://www.amazon.com/Breakway-Header-Straight-Connector-Prototype/dp/B072QDVQ25 or equiv
+
+3x 4/40 dual 4-40 standoffs  
+6x 4/40 pan phillips screws
+                                                                                                                                
